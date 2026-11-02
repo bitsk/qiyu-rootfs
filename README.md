@@ -31,3 +31,5 @@ python3 tools/rootfs.py assemble --system steamos --base-archive /prepared/rootf
 ```
 
 下载使用现有 gh 登录；之后 verify/assemble 只读取本地缓存。`--bundle firmware` 可只下载板级固件，供 maintenance profile 使用。所有 native artifacts 仍由对应源码构建，厂商包不包含它们；per-device persist 校准单独本机备份并注入。型号包缺少校准时不代表可完成跟踪验收。未提供 --vendor-cache 的组装仍允许生成配置包，manifest 会明确 vendor_included=false。
+
+通用启动环境不包含安装分区 UUID。启动时通过 `qiyu.osstore_uuid=<UUID>`，或私有 initramfs 的 `/etc/qiyu-device.conf` 中的 `osstore_uuid` 提供本机身份；缺少身份时停止启动，不跳过分区检查。包含私人身份或校准的镜像只在本地保管。
