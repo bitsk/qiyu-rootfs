@@ -54,7 +54,7 @@
     },
     "qiyu-debug": {
       "repository": "https://github.com/bitsk/qiyu-debug",
-      "commit": "ab70a083a6e5eabe558c6bc70a8dfa03e6f62e98"
+      "commit": "48c7debf32affbe53c7bfafb954a8acbd49cbf54"
     }
   }
 }
