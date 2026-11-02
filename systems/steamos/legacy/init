@@ -1,0 +1,107 @@
+#!/bin/sh
+# PID 1: retain Debian as the default; SteamOS is selected for one recovery boot.
+export PATH=/bin
+mount -t devtmpfs devtmpfs /dev
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t tmpfs -o mode=0755 tmpfs /run
+mkdir -p /sys/kernel/config
+mount -t configfs configfs /sys/kernel/config
+fail() {
+    echo "A081 dual-root initramfs: $*" > /dev/kmsg
+    (sleep 120; sync; reboot -f) &
+    while :; do setsid sh -c 'exec sh -i </dev/ttyGS0 >/dev/ttyGS0 2>&1'; sleep 1; done
+}
+g=/sys/kernel/config/usb_gadget/a081
+mkdir -p "$g" || exit 1
+cd "$g" || exit 1
+printf 0x18d1 > idVendor
+printf 0x4ee7 > idProduct
+printf 0x0200 > bcdUSB
+printf 0x0100 > bcdDevice
+mkdir -p strings/0x409 configs/c.1 functions/acm.usb0
+printf 'Qiyu MIX' > strings/0x409/manufacturer
+printf 'A081 recovery console' > strings/0x409/product
+# Keep the proven maintenance transport, including before a root is selected.
+# /etc/a081-rootfs-id and /run/a081-handoff identify the actual running system.
+printf A081-DEBIAN > strings/0x409/serialnumber
+ln -s "$g/functions/acm.usb0" configs/c.1/acm.usb0
+n=0
+while [ "$n" -lt 60 ]; do
+    for p in /sys/class/udc/a600000.*; do
+        [ -e "$p" ] || continue
+        echo "${p##*/}" > UDC && break 2
+    done
+    sleep 1; n=$((n+1))
+done
+cd /
+n=0
+while [ ! -b /dev/sda16 ] && [ "$n" -lt 60 ]; do sleep 1; n=$((n+1)); done
+[ -b /dev/sda16 ] || fail 'osstore device missing'
+blkid /dev/sda16 | grep -q 'UUID="<device-identity>"' || fail 'osstore UUID mismatch'
+mount -t ext4 -o noatime /dev/sda16 /osstore || fail 'osstore mount failed'
+
+debian_root=/osstore/systems/debian/rootfs
+steamos_root=/osstore/systems/steamos/rootfs
+selector=/osstore/boot/next-system
+selected=debian
+requested=debian
+reason=default
+root="$debian_root"
+
+# The fallback installation must remain intact even for a SteamOS request.
+[ "$(cat "$debian_root/etc/a081-rootfs-id" 2>/dev/null)" = a081-debian-trixie-arm64 ] || fail 'Debian fallback marker missing'
+[ -x "$debian_root/sbin/init" ] || fail 'Debian fallback systemd missing'
+if [ -e "$selector" ] || [ -L "$selector" ]; then
+    requested=invalid
+    if [ -f "$selector" ] && [ ! -L "$selector" ]; then
+        requested=$(cat "$selector")
+    fi
+    # Consume and persist before inspecting or executing the experimental root.
+    # A crash or unsuccessful SteamOS boot cannot make the next recovery repeat it.
+    if rm -f "$selector" && sync; then
+        case "$requested" in
+            steamos)
+                if [ "$(cat "$steamos_root/etc/a081-rootfs-id" 2>/dev/null)" = a081-steamos-arm64 ] &&
+                   [ -x "$steamos_root/sbin/init" ]; then
+                    selected=steamos
+                    root="$steamos_root"
+                    reason=one-shot
+                else
+                    reason=invalid-steamos-root
+                    echo 'A081: SteamOS installation unavailable; using Debian' > /dev/kmsg
+                fi
+                ;;
+            debian) reason=explicit-debian ;;
+            *) reason=invalid-selector ;;
+        esac
+    else
+        reason=selector-consume-failed
+        echo 'A081: cannot consume next-system; using Debian' > /dev/kmsg
+    fi
+fi
+if ! mount --bind "$root" /newroot; then
+    [ "$selected" = steamos ] || fail 'Debian root bind failed'
+    selected=debian
+    root="$debian_root"
+    reason=steamos-bind-failed
+    mount --bind "$root" /newroot || fail 'Debian fallback root bind failed'
+fi
+mkdir -p /newroot/osstore /newroot/run /newroot/dev /newroot/proc /newroot/sys
+mount --move /osstore /newroot/osstore || fail 'store move failed'
+# Retain the verified baseline clock seeding policy.
+now=$(date +%s)
+seed=$(cat /build-epoch)
+if [ -r /newroot/osstore/boot/clock-epoch ]; then
+    saved=$(cat /newroot/osstore/boot/clock-epoch)
+    case "$saved" in ''|*[!0-9]*) ;; *) [ "$saved" -le "$seed" ] || seed=$saved ;; esac
+fi
+[ "$now" -ge "$seed" ] || date -s "@$seed"
+cat /proc/cmdline > /run/a081-initramfs-cmdline
+printf 'osstore UUID verified; selected=%s; reason=%s; root=%s; switching to systemd\n' \
+    "$selected" "$reason" "$root" > /run/a081-handoff
+mount --move /dev /newroot/dev
+mount --move /proc /newroot/proc
+mount --move /sys /newroot/sys
+mount --move /run /newroot/run
+exec switch_root /newroot /sbin/init

@@ -1,0 +1,53 @@
+{
+  "environment": "Native build in installed Debian 13.7 trixie arm64; package list retained with validation",
+  "hexagonrpc": {
+    "url": "https://github.com/linux-msm/hexagonrpc",
+    "commit": "da7a3742ab8d5273a281b70ee11f16fb2cb6a690",
+    "version": "0.5.0",
+    "license": "GPL-3.0-or-later",
+    "source": "sources/imu/hexagonrpc",
+    "archive": "artifacts/debian-imu/hexagonrpc.tar.gz",
+    "sha256": "0427b9ebb5e5f454b1f6f3b545c9e23220453c947445fdacc0ceaa2a4be88312",
+    "build": "meson setup build --prefix=/usr/local --libdir=lib -Dhexagonrpcd_verbose=false; ninja -C build; ninja -C build install; ldconfig"
+  },
+  "libssc": {
+    "url": "https://codeberg.org/DylanVanAssche/libssc",
+    "commit": "4e4c6c8cc702a754bd700506c01961aaf971a23b",
+    "version": "0.4.4",
+    "license": "GPL-3.0-or-later",
+    "source": "sources/imu/libssc",
+    "archive": "artifacts/debian-imu/libssc.tar.gz",
+    "sha256": "5a7681733ff957e73e8e315d0821ff5c00fbea0910ef5e559326297ffaa61dba",
+    "build": "meson setup build --prefix=/usr/local --libdir=lib; ninja -C build; ninja -C build install; ldconfig",
+    "role": "ssccli diagnosis only; the IIO driver does not depend on libssc"
+  },
+  "iio_generic_buffer": {
+    "source": "sources/linux-v7.3/tools/iio",
+    "commit": "c03c1a14507dfaf8b856c2608f9ac216021fc222",
+    "license": "GPL-2.0-only",
+    "archive": "artifacts/debian-imu/iio-tools.tar.gz",
+    "sha256": "62fc217b9391cb136fe39f58e0dcf92bc1d86b9f3aef5fae922310d24c7c1ee3",
+    "build": "cc -D_GNU_SOURCE -O2 iio_generic_buffer.c iio_utils.c -o iio_generic_buffer",
+    "note": "Unmodified upstream tool may return 1 after successful buffer cleanup; validate sample output and stderr"
+  },
+  "native_build_dependencies": [
+    "build-essential",
+    "meson",
+    "ninja-build",
+    "pkg-config",
+    "libglib2.0-dev",
+    "libqmi-glib-dev",
+    "libprotobuf-c-dev",
+    "protobuf-c-compiler",
+    "python3-dev"
+  ],
+  "package_manifest": "reports/device/imu-debian-r1/packages-final.txt",
+  "package_manifest_sha256": "d03d6fb2948ab759b8972ef3603a791d19fcec081f9115c182e17f714f7f8068",
+  "runtime_archive": "artifacts/debian-imu/runtime-userland.tar.xz",
+  "runtime_sha256": "0058f83edfef751038c7751d07c2c5cdbd9b57f84d3fbd895a2466afaa38d706",
+  "runtime_binary_hashes": "reports/device/imu-debian-r1/runtime-binaries.sha256",
+  "sensor_data_manifest": "artifacts/debian-imu/sensor-data-manifest.json",
+  "service": "debian/sensors/a081-sensors-files.service",
+  "udev": "debian/sensors/80-a081-sensors.rules",
+  "filesystem_scope": "Read-only FastRPC mapping into /usr/share/qcom/sm8250/iqiyi/a081; neither Android persist nor its calibrations are modified"
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=A081 SLPI sensor registry and runtime files
+After=local-fs.target
+ConditionPathExists=/dev/fastrpc-sdsp
+ConditionPathExists=/usr/lib/modules/%v/kernel/drivers/iio/imu/qcom-see.ko
+
+[Service]
+ExecStartPre=/usr/sbin/modprobe qcom-see
+ExecStart=/usr/local/bin/hexagonrpcd -f /dev/fastrpc-sdsp -s -R /usr/share/qcom/sm8250/iqiyi/a081
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "userspace": "Steam Frame SteamOS ARM64 20260922.5153644-0.3.0",
+  "source_url": "https://steamdeck-images.steamos.cloud/recovery/steamframe-oobe-repair-20260922.5153644-0.3.0.img.zip",
+  "archive": "steam-frame-research/images/steamframe-oobe-repair-r1.5153644-0.3.0.img.zip",
+  "archive_sha256": "672df1b9c5c6b849df506c995a32fe136b53c4db688f924e6727639dd8b963a9",
+  "archive_member": "lun0.img",
+  "image_bytes": 7516192768,
+  "image_sha256": "081a38c051e99c09db6ae91be994b67ef3347ea71f330d803ab861f0ba8cc654",
+  "partition": "rootfs-A",
+  "partition_sha256": "668da2b1d32e9b779a1ee27ed570961ceaaf83a5dfeadd8129b62603223c319d",
+  "reference_repository": "https://github.com/Producdevity/reframed-vr",
+  "reference_commit": "c08eb1907b85d727d950f645ffc2fcfa23324cc1",
+  "reference_rootfs_digest_source": "tools/prepare-systemd-runtime.py",
+  "builder_dependencies": [
+    "dissect.btrfs==1.10",
+    "dissect.cstruct==4.7",
+    "dissect.util==3.24",
+    "backports.zstd==1.8.0"
+  ],
+  "installation_scope": "Independent SteamOS rootfs under osstore:/systems/steamos/rootfs, using A081 mainline recovery and retaining Debian fallback. No Frame kernel, bootloader, firmware or partition layout is flashed.",
+  "authentication": "Official HTTPS acquisition and pinned content hashes; no independent manufacturer-signature authentication"
+}

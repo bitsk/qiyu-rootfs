@@ -1,0 +1,3 @@
+# Start authentication when the radio exists, including after a driver reload.
+# The previous Debian kernel has no radio; it must not wait for wlan0 at boot.
+ACTION=="add", SUBSYSTEM=="net", DRIVERS=="ath11k_pci", TAG+="systemd", ENV{SYSTEMD_WANTS}+="wpa_supplicant@%k.service"

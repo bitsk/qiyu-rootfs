@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "id": "vr",
+  "components": [
+    "qiyu-kernel",
+    "qiyu-device-service",
+    "qiyu-head-tracking",
+    "qiyu-controller-tracking",
+    "qiyu-vr-runtime",
+    "qiyu-vr-session"
+  ],
+  "vendor_libraries": "externally imported, never checked into this repository",
+  "automatic_service_enable": false
+}

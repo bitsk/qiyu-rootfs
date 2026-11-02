@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "debian",
+  "architecture": "arm64",
+  "prepare": {
+    "program": "adapter.py",
+    "arguments": [
+      "--output",
+      "{output}",
+      "--source",
+      "{source}"
+    ]
+  },
+  "base_archive": "rootfs.tar",
+  "status": "host-side source preparation; no boot or device write"
+}

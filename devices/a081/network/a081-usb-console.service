@@ -1,0 +1,23 @@
+[Unit]
+Description=Qiyu MIX local USB maintenance console
+After=systemd-user-sessions.service
+ConditionPathExists=/dev/ttyGS0
+
+[Service]
+Type=simple
+ExecStart=/bin/bash --noprofile --norc -i
+Restart=always
+RestartSec=1
+KillSignal=SIGHUP
+TimeoutStopSec=5
+StandardInput=tty
+StandardOutput=tty
+StandardError=tty
+TTYPath=/dev/ttyGS0
+TTYReset=yes
+TTYVHangup=yes
+Environment=TERM=dumb
+Environment="PS1=A081-Debian# "
+
+[Install]
+WantedBy=multi-user.target

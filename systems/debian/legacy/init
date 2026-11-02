@@ -1,0 +1,61 @@
+#!/bin/sh
+# PID 1: mount only osstore, bind its Debian directory as /, then start systemd.
+export PATH=/bin
+mount -t devtmpfs devtmpfs /dev
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t tmpfs -o mode=0755 tmpfs /run
+mkdir -p /sys/kernel/config
+mount -t configfs configfs /sys/kernel/config
+fail() {
+    echo "A081 Debian initramfs: $*" > /dev/kmsg
+    # The cable console remains available for diagnosis or `reboot -f` to Android.
+    (sleep 120; sync; reboot -f) &
+    while :; do setsid sh -c 'exec sh -i </dev/ttyGS0 >/dev/ttyGS0 2>&1'; sleep 1; done
+}
+g=/sys/kernel/config/usb_gadget/a081
+mkdir -p "$g" || exit 1
+cd "$g" || exit 1
+printf 0x18d1 > idVendor
+printf 0x4ee7 > idProduct
+printf 0x0200 > bcdUSB
+printf 0x0100 > bcdDevice
+mkdir -p strings/0x409 configs/c.1 functions/acm.usb0
+printf 'Qiyu MIX' > strings/0x409/manufacturer
+printf 'Debian mainline console' > strings/0x409/product
+printf A081-DEBIAN > strings/0x409/serialnumber
+ln -s "$g/functions/acm.usb0" configs/c.1/acm.usb0
+n=0
+while [ "$n" -lt 60 ]; do
+    for p in /sys/class/udc/a600000.*; do
+        [ -e "$p" ] || continue
+        echo "${p##*/}" > UDC && break 2
+    done
+    sleep 1; n=$((n+1))
+done
+cd /
+n=0
+while [ ! -b /dev/sda16 ] && [ "$n" -lt 60 ]; do sleep 1; n=$((n+1)); done
+[ -b /dev/sda16 ] || fail 'osstore device missing'
+blkid /dev/sda16 | grep -q 'UUID="<device-identity>"'  || fail 'osstore UUID mismatch'
+mount -t ext4 -o noatime /dev/sda16 /osstore || fail 'osstore mount failed'
+[ "$(cat /osstore/systems/debian/rootfs/etc/a081-rootfs-id)" = a081-debian-trixie-arm64 ] || fail 'Debian installation marker missing'
+[ -x /osstore/systems/debian/rootfs/sbin/init ] || fail 'systemd missing'
+mount --bind /osstore/systems/debian/rootfs /newroot || fail 'root bind failed'
+mkdir -p /newroot/osstore /newroot/run /newroot/dev /newroot/proc /newroot/sys
+mount --move /osstore /newroot/osstore || fail 'store move failed'
+# The RTC is not yet validated. Seed time only when earlier than image build time.
+now=$(date +%s)
+seed=$(cat /build-epoch)
+if [ -r /newroot/osstore/boot/clock-epoch ]; then
+    saved=$(cat /newroot/osstore/boot/clock-epoch)
+    case "$saved" in ''|*[!0-9]*) ;; *) [ "$saved" -le "$seed" ] || seed=$saved ;; esac
+fi
+[ "$now" -ge "$seed" ] || date -s "@$seed"
+cat /proc/cmdline > /run/a081-initramfs-cmdline
+printf 'osstore UUID verified; Debian root directory bound; switching to systemd\n' > /run/a081-handoff
+mount --move /dev /newroot/dev
+mount --move /proc /newroot/proc
+mount --move /sys /newroot/sys
+mount --move /run /newroot/run
+exec switch_root /newroot /sbin/init

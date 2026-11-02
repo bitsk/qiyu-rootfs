@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "id": "a081",
+  "name": "Qiyu MIX A081",
+  "architecture": "arm64",
+  "systems": [
+    "debian",
+    "steamos"
+  ],
+  "overlay": "overlay",
+  "kernel_repo": "https://github.com/bitsk/qiyu-kernel",
+  "automatic_device_install": false
+}

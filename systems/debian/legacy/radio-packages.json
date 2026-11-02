@@ -1,0 +1,173 @@
+{
+  "source": "Debian trixie + security signed APT indices",
+  "apt_update_log": "build/debian-radio/apt-update.log",
+  "packages": [
+    {
+      "file": "bluez_5.82-1.1_arm64.deb",
+      "sha256": "be1d24dd87fd6cd1b45431cd517bf103fffec026aee42fbeab3533633b546ac4",
+      "metadata": {
+        "Package": "bluez",
+        "Version": "5.82-1.1",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "iw_6.9-1+b1_arm64.deb",
+      "sha256": "dcacc4fb0a002b313effb1f5bb81adf14aca83eed9043bc97acf9e8b437c3d93",
+      "metadata": {
+        "Package": "iw",
+        "Version": "6.9-1+b1",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libasound2-data_1.2.14-1+deb13u1_all.deb",
+      "sha256": "04688afdff3769c0f685541daed7b2f6f0cb946799ddf1d5847ddf11fe245559",
+      "metadata": {
+        "Package": "libasound2-data",
+        "Version": "1.2.14-1+deb13u1",
+        "Architecture": "all"
+      }
+    },
+    {
+      "file": "libasound2t64_1.2.14-1+deb13u1_arm64.deb",
+      "sha256": "9c808d819ccddc37c793dd3186c2ecd858b2feb2474cebb883f70386e7890d39",
+      "metadata": {
+        "Package": "libasound2t64",
+        "Version": "1.2.14-1+deb13u1",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libatomic1_14.2.0-19_arm64.deb",
+      "sha256": "7ccff90234484bf21ae5ecb79d25b6a84b2f4038f65dd139085b2e3a937cd8dc",
+      "metadata": {
+        "Package": "libatomic1",
+        "Version": "14.2.0-19",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libdw1t64_0.192-4_arm64.deb",
+      "sha256": "67efcbd99255a3468f6612a7719083ea1bed967d0bfae39863b5f0e190e0c5ec",
+      "metadata": {
+        "Package": "libdw1t64",
+        "Version": "0.192-4",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libffi8_3.4.8-2_arm64.deb",
+      "sha256": "d84a783b818f2386627604e64b793eb4ac5bb9ea1ba321a194a1c9c82fe09a01",
+      "metadata": {
+        "Package": "libffi8",
+        "Version": "3.4.8-2",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libglib2.0-0t64_2.84.4-3~deb13u5_arm64.deb",
+      "sha256": "d446f0ea85fb9dc411219ce861e59e5eabe1981c796918771a7d2aa97cc72481",
+      "metadata": {
+        "Package": "libglib2.0-0t64",
+        "Version": "2.84.4-3~deb13u5",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libnl-3-200_3.7.0-2_arm64.deb",
+      "sha256": "0489548a052d64b1acf7f61b0f08fd2da954b6fd6b9c729a4e740d7d39652d00",
+      "metadata": {
+        "Package": "libnl-3-200",
+        "Version": "3.7.0-2",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libnl-genl-3-200_3.7.0-2_arm64.deb",
+      "sha256": "5455099e4ae9a013a44bce245678b50c84b93f9983cd3005f49e6a94d14e30ee",
+      "metadata": {
+        "Package": "libnl-genl-3-200",
+        "Version": "3.7.0-2",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libnl-route-3-200_3.7.0-2_arm64.deb",
+      "sha256": "86cd5b58c83cd70a834625f112a6c30da249bb842c4ac4daa44fd4c08298b7be",
+      "metadata": {
+        "Package": "libnl-route-3-200",
+        "Version": "3.7.0-2",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libpcsclite1_2.3.3-1_arm64.deb",
+      "sha256": "e406cfd8f918cbe868c14a9d0dfbc0967f98861e679bcb0f30df6a49d80936f1",
+      "metadata": {
+        "Package": "libpcsclite1",
+        "Version": "2.3.3-1",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "libreadline8t64_8.2-6_arm64.deb",
+      "sha256": "f78ff432b2a627bc04f7eef0e6e2696501c9e06feca748a5b741d5e594429033",
+      "metadata": {
+        "Package": "libreadline8t64",
+        "Version": "8.2-6",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "readline-common_8.2-6_all.deb",
+      "sha256": "f77e8aa0bf0de618f11cb0b21658a4ed60f177d63b3cf26d7fc3706b6d0eaaa9",
+      "metadata": {
+        "Package": "readline-common",
+        "Version": "8.2-6",
+        "Architecture": "all"
+      }
+    },
+    {
+      "file": "systemd-resolved_257.13-1~deb13u1_arm64.deb",
+      "sha256": "bde3620675edb29cabbdcfcf57d7b59d027ad6e81f14ddd5eff51bbeecaed054",
+      "metadata": {
+        "Package": "systemd-resolved",
+        "Version": "257.13-1~deb13u1",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "systemd-timesyncd_257.13-1~deb13u1_arm64.deb",
+      "sha256": "5c00488c8cdbcebf2f39705d4e3554c532a87edf661f22101b181510e15e6b57",
+      "metadata": {
+        "Package": "systemd-timesyncd",
+        "Version": "257.13-1~deb13u1",
+        "Architecture": "arm64"
+      }
+    },
+    {
+      "file": "wpasupplicant_2%3a2.10-24_arm64.deb",
+      "sha256": "d9ab216060c4c66cddcd53030f1a38c57e93a25cb9e0abefa6fe8f36b686f9ae",
+      "metadata": {
+        "Package": "wpasupplicant",
+        "Version": "2:2.10-24",
+        "Architecture": "arm64"
+      }
+    }
+  ],
+  "signed_indices": [
+    {
+      "file": "deb.debian.org_debian_dists_trixie-updates_InRelease",
+      "sha256": "3d0a952e91df7875ebb1aae397dc6f9a5d5ddb600efe8054a469b8aab800bfd4"
+    },
+    {
+      "file": "deb.debian.org_debian_dists_trixie_InRelease",
+      "sha256": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675"
+    },
+    {
+      "file": "security.debian.org_debian-security_dists_trixie-security_InRelease",
+      "sha256": "57ffec84de1b8660b9a20cad0f1de223d55489d0df4b6318eb6c68a5585f2f92"
+    }
+  ]
+}

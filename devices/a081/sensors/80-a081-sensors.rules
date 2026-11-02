@@ -1,0 +1,2 @@
+# FastRPC devices appear asynchronously after the SLPI firmware starts.
+ACTION=="add", SUBSYSTEM=="misc", KERNEL=="fastrpc-sdsp", TAG+="systemd", ENV{SYSTEMD_WANTS}+="a081-sensors-files.service"

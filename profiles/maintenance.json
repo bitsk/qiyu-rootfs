@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "maintenance",
+  "components": [
+    "qiyu-kernel",
+    "qiyu-device-service"
+  ],
+  "vendor_libraries": "externally imported, never checked into this repository",
+  "automatic_service_enable": false
+}
