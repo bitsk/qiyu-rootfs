@@ -4,13 +4,13 @@
   "visibility": "public",
   "tag": "a081-vendor-r1",
   "model": "a081",
-  "catalog_sha256": "4497dd82ff962aa6c2124324fa17ca4cba37514ddc0d04aa524dad88df6a1566",
+  "catalog_sha256": "a49287f5da810d2c661e2775071308fc82fc69d38785d8bf15e9476d80968480",
   "per_device_calibration_included": false,
   "bundles": {
     "firmware": {
       "asset": "a081-firmware-a081-vendor-r1.tar.gz",
-      "sha256": "e6a94ae50400a31748f2b67c0d900bd69fdc9967cc74ea0cca82d64d98bf67e9",
-      "bytes": 14375073,
+      "sha256": "6b350dbfad652752f9fffd4f3a4f9e853283135e8b1a73bed621d36280888de3",
+      "bytes": 14375070,
       "files": [
         {
           "path": "rootfs/lib/firmware/qcom/a650_gmu.bin",
@@ -482,12 +482,12 @@
           "install_path": "lib/firmware/regulatory.db.p7s"
         }
       ],
-      "asset_id": 701295630
+      "asset_id": 702240301
     },
     "qvr": {
       "asset": "a081-qvr-a081-vendor-r1.tar.gz",
-      "sha256": "019b9c9bb2b838019040aa779969520bc9284e2bee843c68e7b48c7d4f43a63b",
-      "bytes": 14302880,
+      "sha256": "f6ec7af1af80146c0c19ba87ff3f2aa96be685b1b250a5cebb0e3072bd8cd185",
+      "bytes": 14302876,
       "files": [
         {
           "path": "runtime/qcom/dsp/cdsp/fastrpc_shell_3",
@@ -581,12 +581,12 @@
           "install_path": "usr/share/qiyu/a081/stock/config6.xml"
         }
       ],
-      "asset_id": 701295628
+      "asset_id": 702240341
     },
     "controller": {
       "asset": "a081-controller-a081-vendor-r1.tar.gz",
-      "sha256": "896e440894812a391563038e32c1a54d99cb0304525fd7ef9ce05f804404e80d",
-      "bytes": 40594849,
+      "sha256": "641c32cc36fa0ebaa80e70ccbf96c9f6958f1e6a39a083f3708584a0b7511dd3",
+      "bytes": 40594836,
       "files": [
         {
           "path": "root/system/lib/android.frameworks.bufferhub@1.0.so",
@@ -1737,12 +1737,12 @@
           "install_path": "opt/a081-controller-bionic/system/etc/controller/data/visinit/visinit_config.xml"
         }
       ],
-      "asset_id": 701295627
+      "asset_id": 702240344
     },
     "controller-dsp": {
       "asset": "a081-controller-dsp-a081-vendor-r1.tar.gz",
-      "sha256": "ec909786f390f07e7d5974b1ca6507cfa36a8314b968e09a4eb1dce6588a409e",
-      "bytes": 14506,
+      "sha256": "7ca45671962a1abd98aa1ebc1d5622a5c963a6a670870656bcc556dd3c2b59c3",
+      "bytes": 14499,
       "files": [
         {
           "path": "root/system/lib/libsnpe_dsp_domains_v2.so",
@@ -1766,7 +1766,7 @@
           "install_path": "opt/a081-controller-bionic/system/lib/libsnpe_dsp_domains_v3.so"
         }
       ],
-      "asset_id": 701309248
+      "asset_id": 702240327
     }
   },
   "release_id": 431302758

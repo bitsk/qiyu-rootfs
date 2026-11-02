@@ -3,7 +3,7 @@
   "components": {
     "qiyu-kernel": {
       "repository": "https://github.com/bitsk/qiyu-kernel",
-      "commit": "dcd23496fb61df3fa9b29756333d2ca9453ebc05"
+      "commit": "fc30355dbc6b5ff06b97d6e8a60bbd0e1433273b"
     },
     "qiyu-device-service": {
       "repository": "https://github.com/bitsk/qiyu-device-service",
@@ -36,7 +36,7 @@
     },
     "qiyu-controller-tracking": {
       "repository": "https://github.com/bitsk/qiyu-controller-tracking",
-      "commit": "ef940a84670e5cf1a665610cf17af0b555b6bdb2",
+      "commit": "c1adfb285f15670b3e87ba19f0b0e9e41df5d31d",
       "public_headers_sha256": {
         "include/qiyu/controller/a081_controller_controls.h": "d79c96213f8f59e2bf242025e1729bf0d196c76ed859c0b14bdeb1e4f54cc1e1",
         "include/qiyu/controller/a081_controller_image_abi.hpp": "0d6d75883df02e60bfce071629f5721d7770df5eb1150c579598b974c9ab71a0",
