@@ -11,5 +11,11 @@
     "qiyu-debug"
   ],
   "vendor_libraries": "externally imported, never checked into this repository",
-  "automatic_service_enable": false
+  "automatic_service_enable": false,
+  "vendor_bundles": [
+    "firmware",
+    "qvr",
+    "controller",
+    "controller-dsp"
+  ]
 }

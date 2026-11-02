@@ -19,3 +19,15 @@ assemble 生成基础归档的原样副本、设备配置 overlay.tar 和锁定�
 systems/*/legacy/ 保留原有设备侧初始化/配置和镜像配方；其中 /mnt/osstore 等路径属于既有 A081 安装流程，不能当作通用主机命令直接运行。devices/a081/ 保存已用的音频、传感器、热控来源；网络凭据、厂商固件和库不进入 Git。
 
 这次是源码拆分和离线构建迁移，未重新验收硬件；已验证系统与 recovery 回退保持原状。工程架构、迁移状态、Wiki 与 Blog 见 [qiyu-docs](https://github.com/bitsk/qiyu-docs)。
+
+## 固定版本原厂二进制
+
+原厂依赖改由独立私有 [qiyu-vendor](https://github.com/bitsk/qiyu-vendor) 的 Release 提供；本仓库只保存 devices/a081/vendor.lock.json 中的资产 ID、归档与逐文件 SHA-256。无需反复提取原厂镜像：
+
+```sh
+python3 tools/vendor.py fetch --output /new/vendor-cache
+python3 tools/vendor.py verify --cache /new/vendor-cache
+python3 tools/rootfs.py assemble --system steamos --base-archive /prepared/rootfs.tar.zst --vendor-cache /new/vendor-cache --artifacts /private/native-artifacts.json --output /new/bundle
+```
+
+下载使用现有 gh 登录；之后 verify/assemble 只读取本地缓存。`--bundle firmware` 可只下载板级固件，供 maintenance profile 使用。所有 native artifacts 仍由对应源码构建，厂商包不包含它们；per-device persist 校准单独本机备份并注入。型号包缺少校准时不代表可完成跟踪验收。未提供 --vendor-cache 的组装仍允许生成配置包，manifest 会明确 vendor_included=false。

@@ -1,0 +1,1773 @@
+{
+  "schema": 1,
+  "repository": "bitsk/qiyu-vendor",
+  "visibility": "private",
+  "tag": "a081-vendor-r1",
+  "model": "a081",
+  "catalog_sha256": "4497dd82ff962aa6c2124324fa17ca4cba37514ddc0d04aa524dad88df6a1566",
+  "per_device_calibration_included": false,
+  "bundles": {
+    "firmware": {
+      "asset": "a081-firmware-a081-vendor-r1.tar.gz",
+      "sha256": "e6a94ae50400a31748f2b67c0d900bd69fdc9967cc74ea0cca82d64d98bf67e9",
+      "bytes": 14375073,
+      "files": [
+        {
+          "path": "rootfs/lib/firmware/qcom/a650_gmu.bin",
+          "sha256": "df79fa8482fcc7587bb239b9c9e2b24bce4729893b990fe3f82b30da8175b01c",
+          "bytes": 41548,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/a650_gmu.bin"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/a650_sqe.fw",
+          "sha256": "7db957e3d06bfc14998b3cd6eb6e076206446f897bd1224f19b14c365e7d5013",
+          "bytes": 31804,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/a650_sqe.fw"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.mdt",
+          "sha256": "299c03a0ad4280eb0d7ad5bb7a50ee1c4b5724ad0371d4fd27db8182afc9426d",
+          "bytes": 6860,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.mdt"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.b00",
+          "sha256": "ec9b9d5a67456384809624b14a00d15d36297e5f2e75728504cd872bc95e0947",
+          "bytes": 148,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.b00"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.b01",
+          "sha256": "7818163283ab4d731de071bc0f3887289795b5fad9f62b854237ae185ce73eaa",
+          "bytes": 6712,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.b01"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.b02",
+          "sha256": "a415e5452fa8f597670a6e51010e97bfabca7d20fbce8044caed64d9d5873113",
+          "bytes": 1676,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/a650_zap.b02"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b00",
+          "sha256": "78778cfc0243701c84bf85884b7c66d5177562b7808f732e245c02c65ab31c6d",
+          "bytes": 692,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b00"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b01",
+          "sha256": "3a82016946c3331a714a65bae878b994725dc52c494c33e498e15d2e2fb91021",
+          "bytes": 7528,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b01"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b02",
+          "sha256": "b5905fa185ef292dbd2303b054b7acd5bc5354abec8dc37fefbc177b787526ac",
+          "bytes": 82552,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b02"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b03",
+          "sha256": "a24ed0cfdcc4e4528aca1e087c9e3bb6798986d34cc4fe1ab356a1aac6e9378e",
+          "bytes": 358784,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b03"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b04",
+          "sha256": "e208a02805e73d3fb75597ef508da2e4752a2b03683563bfaabe18ceba35b69b",
+          "bytes": 1961452,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b04"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b05",
+          "sha256": "e2010f628bd292bd0bcc9dfc3905cd5c15a58ccd8be6d45e47c8f655035f2c8f",
+          "bytes": 2487868,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b05"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b06",
+          "sha256": "6330322efc9e7ceb48f9c2c75db0e38f6f546f04f11a96b2da4695ad0ca8277b",
+          "bytes": 38640,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b06"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b07",
+          "sha256": "cb9fbd8220da1b64e22959f62518782be53251140bcd30ae469e33ad1de2951d",
+          "bytes": 28972,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b07"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b08",
+          "sha256": "5a6af3b787775d028fa9c9174bcd1a5e3fab7f5545a20c9e0772a8e7488934f7",
+          "bytes": 126736,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b08"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b09",
+          "sha256": "34ca6f6a98d8d11dbccefc2ae407934d0ec2879a37201e8fe2da52d3e346266c",
+          "bytes": 64424,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b09"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b10",
+          "sha256": "eeead0a774ac358d78b3b3b66a62af9aba8f40e3226bc66a05f86569eb3ec69c",
+          "bytes": 610304,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b10"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b11",
+          "sha256": "96e170b121752df74ff12cc8cc3266f4b32cd29276007f9b5e805b9c554a494f",
+          "bytes": 7184344,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b11"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b12",
+          "sha256": "eea3549e6439ed600359ab7417cb81c5e25b87622eb3f8560f7af29b9dbdf407",
+          "bytes": 311472,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b12"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b13",
+          "sha256": "9486827a8655d5b90393359d5bee4288ed9a7fb90425e57335280e6e9b946919",
+          "bytes": 240,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b13"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b14",
+          "sha256": "1f7b674de6aa942ff70e7b565cdbe251fd76974747ecc86e3eb9ee2e694f6149",
+          "bytes": 103764,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b14"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b15",
+          "sha256": "ec8e090372274ef66bcd64d4a40cd3985a4a632e3d6b1ed8e7ec14a2dfaa389e",
+          "bytes": 1346476,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b15"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b16",
+          "sha256": "dfecc7bcd55757bd89bf65f634f32ae6be6b63b5576cc8d0de2a15a13fa51a4f",
+          "bytes": 79592,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b16"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b17",
+          "sha256": "5340ef10005de6be0c2ab3ee0d0c5ba1076d89ede014ba2cc5a570f40f755b62",
+          "bytes": 1044656,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b17"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b18",
+          "sha256": "700996b1573ce5e1a97bbb4e4649bbb37e793b64c468a7857d0d903d0e132736",
+          "bytes": 164,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.b18"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/adsp.mdt",
+          "sha256": "d6db974fc8c78360ee1f3d07a4e11fdaa90df3d4be3483ff803a491f56da9d13",
+          "bytes": 8220,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/adsp.mdt"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b00",
+          "sha256": "8ace9561aba6f1ee25fb564e89c7970c0b8a451ddae8a97814fc4d9036cb4ade",
+          "bytes": 468,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b00"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b01",
+          "sha256": "d58e06001b0fa5eb5b485674464f20b1d6fdd9034abf4cbf83fcda06aff1ec11",
+          "bytes": 7192,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b01"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b02",
+          "sha256": "21fafb634eab6b278db723b9982d280191d5444badcb34217eeb6fc9dabad718",
+          "bytes": 235420,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b02"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b03",
+          "sha256": "89fc645bc70e124adcb854a89dc237d754226fb6da7aaae8530fa3051bfeca6a",
+          "bytes": 105980,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b03"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b04",
+          "sha256": "ceb11f87af22fd6f54154295b870d089c4f98a76ff1cd69cfbab193d9857a449",
+          "bytes": 1076,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b04"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b05",
+          "sha256": "135b9e5c60a16365f12a92abc054ba222297afeffd653d244aeb6a6dc4596970",
+          "bytes": 2795116,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b05"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b06",
+          "sha256": "d65d8c8dee6be3d542a45b7259fbcadcc6753360d46fd42cdf765d7f1920f073",
+          "bytes": 83426,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b06"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b08",
+          "sha256": "9a0ac0de0cff31bea57f6f1370208b5566e24de59c8686e9f00f3d13967c1867",
+          "bytes": 2779840,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b08"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b09",
+          "sha256": "1f840190592f75d7f497d56433bb84aba62f91a7f1c17e70e16101a354bcccab",
+          "bytes": 3576,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b09"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b11",
+          "sha256": "12124e23ac16ae8267870589eb4d24e1a743c14b04d172ed0d81c2d9aaed8f34",
+          "bytes": 59156,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.b11"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.mdt",
+          "sha256": "bf426770bb8d47f65fce1b6e36876e4920d5d93cc72f2aab0b4d5b439943898b",
+          "bytes": 7660,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/cdsp.mdt"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b00",
+          "sha256": "17598f42f794dfe81908cf34bfac7db62e7ab7762ee2f9f071d19203f2880457",
+          "bytes": 756,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b00"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b01",
+          "sha256": "13809742eac964b7115d7a815c695a0639f0065336a4cd0b57c4a53f00566918",
+          "bytes": 7624,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b01"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b02",
+          "sha256": "4b011175be7a3cf6440518dd9dce362317eb2892c03f7f5a8148cd9954ab93ea",
+          "bytes": 82680,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b02"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b03",
+          "sha256": "25d9327b33bec1945543daed14d7ed8d6b9fe713bc5687dde616e44a174488d3",
+          "bytes": 247232,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b03"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b04",
+          "sha256": "61ea73beafae001ab23e987defd1ccac3ab5b743fea82c484aa0d4d2ddcef692",
+          "bytes": 2072076,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b04"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b05",
+          "sha256": "8be2fce41991938c6d903165757b3efbf5b10d7f564f9ca5d0426581ff9f03fc",
+          "bytes": 1733288,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b05"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b06",
+          "sha256": "745aeadf6a134ec1ce6d6ffa6b5de722e058f4c6ea5ebe5bbcd65911da275d45",
+          "bytes": 63642,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b06"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b07",
+          "sha256": "51123cc435aa11bcb8ec1df4bd82c7db76750e79cfea1d8b13596feb53bf74ac",
+          "bytes": 28972,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b07"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b08",
+          "sha256": "399e4258fdabed99c850874ee6db7737fdb507cf617e3b028e463df8b96e2be4",
+          "bytes": 167156,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b08"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b09",
+          "sha256": "b515a531a2a6caaac41e2d55022dabbda4ebf9be79e5195834f46914c6a07031",
+          "bytes": 111388,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b09"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b10",
+          "sha256": "7d7911d2f3afd946ae241b6cf830d78eceb80a64ac79212f1396e64f60cfcb2c",
+          "bytes": 56936,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b10"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b11",
+          "sha256": "248dab7c11f6162b6a171fa0c744d961213945f1b5b9c0b10d44fb0b407d8040",
+          "bytes": 27572,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b11"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b12",
+          "sha256": "d535346a96bc2aca7974b20d75cca8737f4455ffd599499da8467933d282862e",
+          "bytes": 82,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b12"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b13",
+          "sha256": "5941c70207ac03b30c5f3b18768a5c64198e906e4d75d4605db917d445094da9",
+          "bytes": 122820,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b13"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b14",
+          "sha256": "38d73b955c3a657c3bf828ff36440d209bcdac13209d1a304f3feef2e3e249e2",
+          "bytes": 172,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b14"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b15",
+          "sha256": "446364c5e41e337716b8ace72223c61a1e1684e05448e96548741e52433821b3",
+          "bytes": 1755324,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b15"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b16",
+          "sha256": "bd0c9a3c3b38c9bd42100bbd79ec975eadb5db99c7ba43414a0a810059d7bee4",
+          "bytes": 20484,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b16"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b17",
+          "sha256": "d10a5254079e472c355b97cd9ba876a24e9691bcb382f88d9a1271d68c8dab6a",
+          "bytes": 14824,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b17"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b18",
+          "sha256": "83fa0f21a20830339956e1e4b25767c9485651beeb0fb88c20fb919e74980557",
+          "bytes": 51056,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b18"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b19",
+          "sha256": "ab005481a9d9a6181c4ca1bcd2fa885ad44992c3c2ed76663789532de33cdabb",
+          "bytes": 56308,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b19"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b20",
+          "sha256": "aa6d8f8972fbea87a4ed66bd793da84d316de0bf4dfc9cb2b05c6d5f3db78f10",
+          "bytes": 413076,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.b20"
+        },
+        {
+          "path": "rootfs/lib/firmware/qcom/sm8250/iqiyi/a081/slpi.mdt",
+          "sha256": "6b9fbb8d99ba7443f285e62ab841e1744d98987f5f74f42b6edcc1ef2fb543c5",
+          "bytes": 8380,
+          "mode": 436,
+          "install_path": "lib/firmware/qcom/sm8250/iqiyi/a081/slpi.mdt"
+        },
+        {
+          "path": "rootfs/lib/firmware/ath11k/WCN6855/hw1.1/amss.bin",
+          "sha256": "26e8ffd7f800a9663505025ba927976d8433b3cc8ba138268397da925cbbda8a",
+          "bytes": 5031712,
+          "mode": 436,
+          "install_path": "lib/firmware/ath11k/WCN6855/hw1.1/amss.bin"
+        },
+        {
+          "path": "rootfs/lib/firmware/ath11k/WCN6855/hw1.1/board.bin",
+          "sha256": "d208e49ff6919c00c5451c46155418c4c55c9f18742ac5e2a351425b3395942a",
+          "bytes": 60000,
+          "mode": 436,
+          "install_path": "lib/firmware/ath11k/WCN6855/hw1.1/board.bin"
+        },
+        {
+          "path": "rootfs/lib/firmware/ath11k/WCN6855/hw1.1/m3.bin",
+          "sha256": "d973b2b4e9bbb58103664698de6e7192ba97e4860cdfd9757d5ea951852ff39a",
+          "bytes": 266684,
+          "mode": 436,
+          "install_path": "lib/firmware/ath11k/WCN6855/hw1.1/m3.bin"
+        },
+        {
+          "path": "rootfs/lib/firmware/ath11k/WCN6855/hw1.1/regdb.bin",
+          "sha256": "664a53faa807bdef149b5e4cd3a17d380ffec2a69dc2342558cd73abbc34b70a",
+          "bytes": 24278,
+          "mode": 436,
+          "install_path": "lib/firmware/ath11k/WCN6855/hw1.1/regdb.bin"
+        },
+        {
+          "path": "rootfs/lib/firmware/qca/wcnhpbtfw10.tlv",
+          "sha256": "6b70116813004314a199e4ec1c0c7f0b9263235214f4ae744bc31d3e9ac5e3fc",
+          "bytes": 192412,
+          "mode": 436,
+          "install_path": "lib/firmware/qca/wcnhpbtfw10.tlv"
+        },
+        {
+          "path": "rootfs/lib/firmware/qca/wcnhpnv10.bin",
+          "sha256": "5bf297af01e66ec0af7e026261345c05afe9a06c605044112e55df3a7e9a0731",
+          "bytes": 6123,
+          "mode": 436,
+          "install_path": "lib/firmware/qca/wcnhpnv10.bin"
+        },
+        {
+          "path": "rootfs/lib/firmware/regulatory.db",
+          "sha256": "9d171281bfe7acc5d203007427f6075b704b7a48ff42ae25b9f490a0118fe7d2",
+          "bytes": 6308,
+          "mode": 436,
+          "install_path": "lib/firmware/regulatory.db"
+        },
+        {
+          "path": "rootfs/lib/firmware/regulatory.db.p7s",
+          "sha256": "d1170298577027c2da346242627ff6cad09fbebaa96a6b2de07ada7c873dd337",
+          "bytes": 1085,
+          "mode": 436,
+          "install_path": "lib/firmware/regulatory.db.p7s"
+        }
+      ],
+      "asset_id": 701295630
+    },
+    "qvr": {
+      "asset": "a081-qvr-a081-vendor-r1.tar.gz",
+      "sha256": "019b9c9bb2b838019040aa779969520bc9284e2bee843c68e7b48c7d4f43a63b",
+      "bytes": 14302880,
+      "files": [
+        {
+          "path": "runtime/qcom/dsp/cdsp/fastrpc_shell_3",
+          "sha256": "8b8962fe943f8b67fd4a0cadd1d6cb8afc900d922b791393019dd67499537bce",
+          "bytes": 940648,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/fastrpc_shell_3"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/fastrpc_shell_unsigned_3",
+          "sha256": "d0b6733096fc68465bff8dd6baa0746c8facd10a1834a291f84026147ea0581b",
+          "bytes": 935068,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/fastrpc_shell_unsigned_3"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libc++.so.1",
+          "sha256": "a3d339c9e2a31fab728857bbe2c3f415b3bc4933e811568d4c0162c70603d419",
+          "bytes": 3665376,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libc++.so.1"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libc++abi.so.1",
+          "sha256": "0e542dd62d5df4d914fd673a2025fe67793cfc8635837fc1f73487f1a025e6f8",
+          "bytes": 650888,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libc++abi.so.1"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libcvpdsp_skel.so",
+          "sha256": "c5becc54ef14ecab16a40d4b6e2cff29e07ead3769a5726d8d8b0d2404781f23",
+          "bytes": 483504,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libcvpdsp_skel.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libfastcvadsp.so",
+          "sha256": "eb1b3e1884afaab3c1b5f4f9898864421ca37cd98d004ef3949a9cae13266740",
+          "bytes": 1477032,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libfastcvadsp.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libdspCV_skel.so",
+          "sha256": "2777a4ead552d5ea08ca98d8ef2004df7f771a79db14604df19d2622d7260a55",
+          "bytes": 33304,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libdspCV_skel.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libqvr_dsp_driver_skel.so",
+          "sha256": "71022184524650e554cff0067f9e8787a1e88b0f80d3bff163aa9f2fcc462255",
+          "bytes": 139568,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libqvr_dsp_driver_skel.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libqvr_3dof_tracker_skel.so",
+          "sha256": "cb3b7f10171a28be93b6f1c25db41ba643c923ce47ee739ee558487ce9b55779",
+          "bytes": 38096,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libqvr_3dof_tracker_skel.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libqvr_cam_dsp_driver_skel.so",
+          "sha256": "e7c143d708627a7aae2163d37e226494ca2bf1618ac9eca72229359443347338",
+          "bytes": 100741,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libqvr_cam_dsp_driver_skel.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libtracker_6dof_skel_8250.so",
+          "sha256": "6f0e9205f8401502b554ce47d077b70ad5e054cb18b4acec6cd0bc7ec238d27d",
+          "bytes": 27982976,
+          "mode": 436,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libtracker_6dof_skel_8250.so"
+        },
+        {
+          "path": "runtime/qcom/dsp/cdsp/libsnpe_dsp_v66_domains_v2_skel.so",
+          "sha256": "7e58d46e89b98de66dd1e1d0c1282bafeb01231dd0887dca94aeefeaadbd4555",
+          "bytes": 1640266,
+          "mode": 420,
+          "install_path": "opt/mix-vr-shell-controller/tracking/stock-runtime/qcom/dsp/cdsp/libsnpe_dsp_v66_domains_v2_skel.so"
+        },
+        {
+          "path": "config/config6.xml",
+          "sha256": "aeef461d9ac5b191f0d2c3e83de3a5d45f305b0f7286c8fc4c5bcecb3b612db9",
+          "bytes": 704,
+          "mode": 436,
+          "install_path": "usr/share/qiyu/a081/stock/config6.xml"
+        }
+      ],
+      "asset_id": 701295628
+    },
+    "controller": {
+      "asset": "a081-controller-a081-vendor-r1.tar.gz",
+      "sha256": "896e440894812a391563038e32c1a54d99cb0304525fd7ef9ce05f804404e80d",
+      "bytes": 40594849,
+      "files": [
+        {
+          "path": "root/system/lib/android.frameworks.bufferhub@1.0.so",
+          "sha256": "59cc67d6abdcd40ae9442185d571fc82b2083cd903214c91932935e995272215",
+          "bytes": 98452,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.frameworks.bufferhub@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.cas.native@1.0.so",
+          "sha256": "78691831a75e2517564ce77152f6e4ddcae664a8875c1a663def0fb52f8704ee",
+          "bytes": 70424,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.cas.native@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.cas@1.0.so",
+          "sha256": "0febd328b13dd9895d669b5417ad359e04319f5464187a29f45c28b15d51620a",
+          "bytes": 170548,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.cas@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.configstore-utils.so",
+          "sha256": "2794222683ae2f455f1241dfcf5108eeb61d9a9ce7b8ad584f5378f5cccd2452",
+          "bytes": 15176,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.configstore-utils.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.configstore@1.0.so",
+          "sha256": "b6aad352233391dd749134125d42ef2fd23341744be6e08697b00f019d7fc3a4",
+          "bytes": 92508,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.configstore@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.configstore@1.1.so",
+          "sha256": "1a57c7f66ab8bb24c7cca15c32bd7cedfdf56fa4205171b3deb75b1a87cc0474",
+          "bytes": 83620,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.configstore@1.1.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.drm@1.0.so",
+          "sha256": "a96d204ecca99dfe7ee63527bf0e754b1c23b88e55b528cdb03283f64a7308b9",
+          "bytes": 269896,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.drm@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.drm@1.1.so",
+          "sha256": "3f651af99060f13151a0349a7acc62d71a4299faf444111a2f89951b189e9631",
+          "bytes": 189232,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.drm@1.1.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.drm@1.2.so",
+          "sha256": "531219cd8537109836bc5a67fd52b5e68ed82dea27bcb1cf5b1d0cdc3f9fae82",
+          "bytes": 285968,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.drm@1.2.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.allocator@2.0.so",
+          "sha256": "f2d0a16dd6e2001b441be972d7c6ee74d18fdd242df051886abc0182b58257a4",
+          "bytes": 65912,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.allocator@2.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.allocator@3.0.so",
+          "sha256": "315a791bea429f172e54d03c19ea4e70c79f295b1ddefdd4c466b54535d816b8",
+          "bytes": 65920,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.allocator@3.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.bufferqueue@1.0.so",
+          "sha256": "c0165e593c86af15df1ca2c642089d8e33911fe0301812772e18a4f79038c8dc",
+          "bytes": 155148,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.bufferqueue@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.bufferqueue@2.0.so",
+          "sha256": "4b55cd11554189fcf2941d7ae436cb4e2dd0868e8c4a1be9c033fd829c9318bf",
+          "bytes": 137756,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.bufferqueue@2.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.common@1.0.so",
+          "sha256": "dbd8f7c37d6826b5dc27b07e833c0d061f4469b27bf0a2def34fe5647cb3544a",
+          "bytes": 14900,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.common@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.common@1.1.so",
+          "sha256": "92867c36f01d16280c2caa70f144c6ffc1d1abb20e559edf35ef10c2b60c0718",
+          "bytes": 14908,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.common@1.1.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.common@1.2.so",
+          "sha256": "fffc0e5348d1ebc5d2cfeb9aaaa816b2606241d7f1b81957dc5c58ec69cf6b32",
+          "bytes": 15020,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.common@1.2.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.mapper@2.0.so",
+          "sha256": "2c8ac214f478d14ad4658b31d1c32c56150b5eccb7a74ec8af275a885eeca697",
+          "bytes": 74748,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.mapper@2.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.mapper@2.1.so",
+          "sha256": "d8b4b1ebe43a1ef128a79d1f0efee82710284dbc9de7f7928875dd367b07ebaf",
+          "bytes": 79348,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.mapper@2.1.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.graphics.mapper@3.0.so",
+          "sha256": "c9e425f4fa5a0c4cef6c036e550238883c0dbe1b5bd046107337307258d09ec4",
+          "bytes": 79528,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.graphics.mapper@3.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.media.omx@1.0.so",
+          "sha256": "d68acf835a243784b4e0a6934ef6cbd98fc3883aebbda3e11e3c2217d2e9a6ba",
+          "bytes": 293296,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.media.omx@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.media@1.0.so",
+          "sha256": "69bfc541ab21be33b3ec520499cf8a071ff020edb206f2fafbf796c754acc2b0",
+          "bytes": 15012,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.media@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hardware.memtrack@1.0.so",
+          "sha256": "791539011d1884997398526c66f6c6823e16fd175321dc6f6d8d635bee71b64a",
+          "bytes": 61504,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hardware.memtrack@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hidl.allocator@1.0.so",
+          "sha256": "1db402960f1e9649cd1766a05ae6acc70085405536d64b5965c451c3d9d8a394",
+          "bytes": 65912,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hidl.allocator@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hidl.memory.token@1.0.so",
+          "sha256": "595ec0a2d946ffed3eef04162df9f975bff7f2017dcb3d02b3c90982a69a2ddc",
+          "bytes": 61400,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hidl.memory.token@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hidl.memory@1.0.so",
+          "sha256": "04c10915ec1f69665f1b7815949b897bf6a024fc04de5e46012450a4e292e77f",
+          "bytes": 97596,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hidl.memory@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.hidl.token@1.0-utils.so",
+          "sha256": "a3686ebd105ed01d44886087d15b847e3284e0172c06d5106ba4b4ca65f6dd4d",
+          "bytes": 15984,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hidl.token@1.0-utils.so"
+        },
+        {
+          "path": "root/system/lib/android.hidl.token@1.0.so",
+          "sha256": "5865b2d9e3addfd470c4103fc950a13da4b741b17d9cc175b872bd9fbdb5de48",
+          "bytes": 65680,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.hidl.token@1.0.so"
+        },
+        {
+          "path": "root/system/lib/android.system.suspend@1.0.so",
+          "sha256": "3d30b0f2158c96a93c8564b593468e041162ad08132b38d663f3b8fd67ae9282",
+          "bytes": 89064,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/android.system.suspend@1.0.so"
+        },
+        {
+          "path": "root/system/lib/ld-android.so",
+          "sha256": "c508bbf2825a97d15bce74e7e3ff1a8808409d04db6bba010f010090fa833481",
+          "bytes": 9464,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/ld-android.so"
+        },
+        {
+          "path": "root/system/lib/libControllerSDK_EXPORT.so",
+          "sha256": "7008b975aa23b92a2cc9a43278b626d44512fbce597e92858e18f13b4609fe6a",
+          "bytes": 18517396,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libControllerSDK_EXPORT.so"
+        },
+        {
+          "path": "root/system/lib/libEGL.so",
+          "sha256": "3ffd358d18a0c6056a332935374ca7e5f8fae0fd515145d117997cbd3350f1a6",
+          "bytes": 156648,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libEGL.so"
+        },
+        {
+          "path": "root/system/lib/libETC1.so",
+          "sha256": "212d57d81d1ab353e2ae42f5a28c027870e324773ffbd3dd2a76ab65c82b8add",
+          "bytes": 19284,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libETC1.so"
+        },
+        {
+          "path": "root/system/lib/libGLESv1_CM.so",
+          "sha256": "e6b435c0d92518a5713eb47cc4630f9bce09f34cffa793ea67b3289d010f554f",
+          "bytes": 31928,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libGLESv1_CM.so"
+        },
+        {
+          "path": "root/system/lib/libGLESv2.so",
+          "sha256": "04117fe5d8b8b89295af7fde56cdc765322be36175d23a458310ab9420a0bb7d",
+          "bytes": 77620,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libGLESv2.so"
+        },
+        {
+          "path": "root/system/lib/libGLESv3.so",
+          "sha256": "daaac1e37c48f4ccbaca9f9a0c60bb4fcaab445ef0603ac6d0f784b8124f6577",
+          "bytes": 77628,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libGLESv3.so"
+        },
+        {
+          "path": "root/system/lib/libRScpp.so",
+          "sha256": "4d6c34b585bbc73fbc29588af51de6198d299e0c5246a51e738d8cd6fe5baf3e",
+          "bytes": 248584,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libRScpp.so"
+        },
+        {
+          "path": "root/system/lib/libSNPE.so",
+          "sha256": "b8625df9d96f8960a9f09fdfe50e857eb5f9a8433c81acec4cc66d100a0db450",
+          "bytes": 4764824,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libSNPE.so"
+        },
+        {
+          "path": "root/system/lib/libandroid.so",
+          "sha256": "c75ced46972bb5828745ea4fd1c0bb987020ed0084046520598e1b8cd1394962",
+          "bytes": 111484,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libandroid.so"
+        },
+        {
+          "path": "root/system/lib/libandroid_runtime.so",
+          "sha256": "6fd290a14bd4c7a89eab0b2a660361845b906514d04f387dd90134749c99b4cf",
+          "bytes": 1526500,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libandroid_runtime.so"
+        },
+        {
+          "path": "root/system/lib/libandroid_runtime_lazy.so",
+          "sha256": "4ec8bb5dc19f73969e7cc6ee4c371770f3d1d8eabb91ca930172a63c2dae41c1",
+          "bytes": 15160,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libandroid_runtime_lazy.so"
+        },
+        {
+          "path": "root/system/lib/libandroidfw.so",
+          "sha256": "b3f86cf060d6fa92ca885c62e25a67271ca5152dfe07ba19bf11544ead1a15cd",
+          "bytes": 322644,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libandroidfw.so"
+        },
+        {
+          "path": "root/system/lib/libandroidicu.so",
+          "sha256": "31350b6d3e9f00ac32ca8c81d1b19a0412fa806944ff5a67e8cf6687a8dfd665",
+          "bytes": 150100,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libandroidicu.so"
+        },
+        {
+          "path": "root/system/lib/libappfuse.so",
+          "sha256": "2aa4bb85bff0138ae3bf1629e5b1d3f69cbbf687894f976a9eb97932da7aba42",
+          "bytes": 45628,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libappfuse.so"
+        },
+        {
+          "path": "root/system/lib/libaudioclient.so",
+          "sha256": "4f247c5028df406441e99a8c6c62a05967a4e2edc4da8a353454788527b3321d",
+          "bytes": 412504,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libaudioclient.so"
+        },
+        {
+          "path": "root/system/lib/libaudiomanager.so",
+          "sha256": "c79300007177bf242c5955369f5b398f31b26919a4071dbbdf6bea17248ad3ab",
+          "bytes": 20848,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libaudiomanager.so"
+        },
+        {
+          "path": "root/system/lib/libaudiopolicy.so",
+          "sha256": "554cb253e406db8f39684480bbd6e5fd41eb1c7265c51d48ccb6c6d1f385858d",
+          "bytes": 23836,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libaudiopolicy.so"
+        },
+        {
+          "path": "root/system/lib/libaudioutils.so",
+          "sha256": "4e40158bfae85c239470ee83e62deeff5abfca85d95d9f79218d6a854bd6ce5f",
+          "bytes": 84128,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libaudioutils.so"
+        },
+        {
+          "path": "root/system/lib/libbacktrace.so",
+          "sha256": "375cd4cddadb14bdac63ceea7e5254502da6a52c06bb8d943573e9bf82c93d91",
+          "bytes": 89024,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbacktrace.so"
+        },
+        {
+          "path": "root/system/lib/libbase.so",
+          "sha256": "d43cb405bd95a3c9d43f554d1646c4078312afb242967897a88849f263d6e806",
+          "bytes": 63196,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbase.so"
+        },
+        {
+          "path": "root/system/lib/libbinder.so",
+          "sha256": "2700aa4a6fa3231f8d328d385fca352a7df254113b1d5fefa156c53e46f8d808",
+          "bytes": 441816,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbinder.so"
+        },
+        {
+          "path": "root/system/lib/libbinderthreadstate.so",
+          "sha256": "18a731f62de0c83b458da81244b9bcfe3669f41aeb4aaeefba2cf55ae7cf1dbf",
+          "bytes": 15460,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbinderthreadstate.so"
+        },
+        {
+          "path": "root/system/lib/libbpf.so",
+          "sha256": "51edbdb204021de9295c6d0990903b17d9af3be0ffe4eff5bc6994f8ae19e1e3",
+          "bytes": 37300,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbpf.so"
+        },
+        {
+          "path": "root/system/lib/libbpf_android.so",
+          "sha256": "382dc5cacf78a07e7ab6a2daf7eba4d4cab0abd91aca6cb2806897b4e7f9fb06",
+          "bytes": 54500,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbpf_android.so"
+        },
+        {
+          "path": "root/system/lib/libbufferhub.so",
+          "sha256": "f28de41d3060ea0706a381443b201cfcc0d68d6b39e57180a8a36af2d6af5c78",
+          "bytes": 55372,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbufferhub.so"
+        },
+        {
+          "path": "root/system/lib/libbufferhubqueue.so",
+          "sha256": "f405441423e90baf7d749b5257e07136b5dd584de0777d27d33050987bfaf94e",
+          "bytes": 94316,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libbufferhubqueue.so"
+        },
+        {
+          "path": "root/system/lib/libc++.so",
+          "sha256": "4f53ee63d50eeb2d26ae2a4abbd5f7da2185af743da5bcf9d6123e0cfa51f559",
+          "bytes": 593280,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libc++.so"
+        },
+        {
+          "path": "root/system/lib/libc++_shared.so",
+          "sha256": "66336f9675f720201d2c314f3d559da20b909fcc3eb8677d3ccbabd135e7f9b9",
+          "bytes": 554808,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libc++_shared.so"
+        },
+        {
+          "path": "root/system/lib/libc.so",
+          "sha256": "1990ec6ded7c3ad1efd49b3e3280fa52e77b909b7edf049d7f0ff948b1054046",
+          "bytes": 995572,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libc.so"
+        },
+        {
+          "path": "root/system/lib/libcamera_client.so",
+          "sha256": "56443130e33f09174f7200677b129b4f663d70acac35d3388b5da399b735f281",
+          "bytes": 280472,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libcamera_client.so"
+        },
+        {
+          "path": "root/system/lib/libcamera_metadata.so",
+          "sha256": "75ef80be1962e27bbc3530d1715aa965580e9da8d44313bde47c8f76814871ba",
+          "bytes": 40764,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libcamera_metadata.so"
+        },
+        {
+          "path": "root/system/lib/libcgrouprc.so",
+          "sha256": "45b65d22c50fc3ecd083c7b5417bf7d0b5c9a557649bb2114a12162e0297a980",
+          "bytes": 15616,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libcgrouprc.so"
+        },
+        {
+          "path": "root/system/lib/libcrypto.so",
+          "sha256": "fdf9b0a3beab016d1ea13f72dff51bbdd188fd49e2743cdacceb049d66ad2fd5",
+          "bytes": 916084,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libcrypto.so"
+        },
+        {
+          "path": "root/system/lib/libcutils.so",
+          "sha256": "5001b6fceb48eea39be0e5ba34f579755f6cf6940802be0ce18916f47b5a5aec",
+          "bytes": 58020,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libcutils.so"
+        },
+        {
+          "path": "root/system/lib/libdebuggerd_client.so",
+          "sha256": "38ec0bd6041f4c547a9968ee258a827fb7766d584383cc318bba9d1856314900",
+          "bytes": 28324,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libdebuggerd_client.so"
+        },
+        {
+          "path": "root/system/lib/libdexfile_support.so",
+          "sha256": "00ac080384ac4d731001da75858d7c4bcc68485a7491f07bb7e584d7f1678a6f",
+          "bytes": 15324,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libdexfile_support.so"
+        },
+        {
+          "path": "root/system/lib/libdl.so",
+          "sha256": "6d718eb88877bff32c133f8ec31c3b6277aee5cbea1a2224f0e4ed06767f6f5f",
+          "bytes": 14000,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libdl.so"
+        },
+        {
+          "path": "root/system/lib/libdl_android.so",
+          "sha256": "763a11af5e0199f95ca7a16d09228f5624fa3efe8a4f12b12353b05a54fae268",
+          "bytes": 9920,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libdl_android.so"
+        },
+        {
+          "path": "root/system/lib/libdng_sdk.so",
+          "sha256": "66f919bb61f34ab92c88cde0132bbcd3ccffe6149a712fa81ad9fe54418f9b1a",
+          "bytes": 613204,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libdng_sdk.so"
+        },
+        {
+          "path": "root/system/lib/libdrmframework.so",
+          "sha256": "0f4aefb44eb2414d017e6439b8a8e678e509f514b0bc51abc715f1a6dbc2e119",
+          "bytes": 104632,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libdrmframework.so"
+        },
+        {
+          "path": "root/system/lib/libexpat.so",
+          "sha256": "4cfbfcccd773477f6612c20657697af22845a0406178187ae15a392e8996f44e",
+          "bytes": 114396,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libexpat.so"
+        },
+        {
+          "path": "root/system/lib/libft2.so",
+          "sha256": "6a530d8b92763cde6dd5bd0625d647f6dd3aea078f40f30d55cfc7d4301e7a16",
+          "bytes": 639964,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libft2.so"
+        },
+        {
+          "path": "root/system/lib/libgraphicsenv.so",
+          "sha256": "998dfe86bff4215e514078644a17d2fcf5243854fd9ff83251950881c3800a18",
+          "bytes": 47600,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libgraphicsenv.so"
+        },
+        {
+          "path": "root/system/lib/libgui.so",
+          "sha256": "b76e63e5bc9ab0df12ba51c1890787700b2cabf7d34fb6512c66e5a2801c67cd",
+          "bytes": 693300,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libgui.so"
+        },
+        {
+          "path": "root/system/lib/libhardware.so",
+          "sha256": "a3323320a49ab1b50da21ba29cb77c8e40e209871f9089443a2e4ff358d817ab",
+          "bytes": 15256,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhardware.so"
+        },
+        {
+          "path": "root/system/lib/libhardware_legacy.so",
+          "sha256": "b8dbcb83f2d5c4a89bbf776de015c64f71b40f0b6374657c4551c6452951a563",
+          "bytes": 23908,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhardware_legacy.so"
+        },
+        {
+          "path": "root/system/lib/libharfbuzz_ng.so",
+          "sha256": "446f74f0b1a078c3b170b16be75fb38d1c05c9d3e2b92796f7510e070775cabd",
+          "bytes": 716920,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libharfbuzz_ng.so"
+        },
+        {
+          "path": "root/system/lib/libheif.so",
+          "sha256": "a1c8822bc55d5c6c2fbfc95acdb8f9d86f3d045e6e3db300a9a977e0310de06b",
+          "bytes": 29612,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libheif.so"
+        },
+        {
+          "path": "root/system/lib/libhidl-gen-utils.so",
+          "sha256": "9da2dd4cb9599b669061283421e2b688784fedd946421f06ac2ab1fbd89d1080",
+          "bytes": 105864,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhidl-gen-utils.so"
+        },
+        {
+          "path": "root/system/lib/libhidlallocatorutils.so",
+          "sha256": "b16b6ce139b49cdc2450c8f4c5b546d2d9a7c33308489b6204c44a67e646f6f0",
+          "bytes": 15008,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhidlallocatorutils.so"
+        },
+        {
+          "path": "root/system/lib/libhidlbase.so",
+          "sha256": "06d917ae7b49dd3a51a813dd52db7d2d218c73770e46ab9889e481824eda5e63",
+          "bytes": 499900,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhidlbase.so"
+        },
+        {
+          "path": "root/system/lib/libhidlmemory.so",
+          "sha256": "3b006d2e61241c1d95250ef15874ac838ee0999871e254df1b8e29e601287fc4",
+          "bytes": 24732,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhidlmemory.so"
+        },
+        {
+          "path": "root/system/lib/libhidltransport.so",
+          "sha256": "7aa7b1cc79b1d5f1289b18fc2f61e86ee4e4d34634faf1787089cebea4c2702c",
+          "bytes": 14848,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhidltransport.so"
+        },
+        {
+          "path": "root/system/lib/libhwbinder.so",
+          "sha256": "460d4745a47bbef8d8ad398afa28cf127bd9cfc9dd79c7a4b413fc82ce57fc8b",
+          "bytes": 14848,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhwbinder.so"
+        },
+        {
+          "path": "root/system/lib/libhwui.so",
+          "sha256": "641335b6515974f6c83fdd9feca5606623bed94bd9a5e53f6369424bc79f5c3f",
+          "bytes": 5290920,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libhwui.so"
+        },
+        {
+          "path": "root/system/lib/libicui18n.so",
+          "sha256": "b28ee42539027167f0757c689ab81feebb03c58eea42528a17f1fd8397e5e582",
+          "bytes": 1840656,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libicui18n.so"
+        },
+        {
+          "path": "root/system/lib/libicuuc.so",
+          "sha256": "f3a28182053f25c0715990a83de0aaa0f07cc73d612d3b70f072ce711dd8f9fc",
+          "bytes": 1332076,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libicuuc.so"
+        },
+        {
+          "path": "root/system/lib/libimg_utils.so",
+          "sha256": "4ddea29b64730fc64e8ccfbd2c2bb34e3fb18fece18f8e3e06b9df75f1d760ca",
+          "bytes": 63428,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libimg_utils.so"
+        },
+        {
+          "path": "root/system/lib/libinput.so",
+          "sha256": "f8d7c72c4b2f5466d6bc1b982f8cf7a393367d1761f4e66a0ce11548969ec80b",
+          "bytes": 172572,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libinput.so"
+        },
+        {
+          "path": "root/system/lib/libjpeg.so",
+          "sha256": "c0d6b073cbaed1097e1efe2eed61579f3d8457578a4753a40dc94eb36d74f26f",
+          "bytes": 312160,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libjpeg.so"
+        },
+        {
+          "path": "root/system/lib/liblog.so",
+          "sha256": "5bd6890e5f5018c06e04de36a7d3d5f300486d0fbfde9455ad1bdca11f0ffc22",
+          "bytes": 72296,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/liblog.so"
+        },
+        {
+          "path": "root/system/lib/liblzma.so",
+          "sha256": "5402f55ec996474dccf02a27d377852ab4e302886d39ac1bbabc01516df198bb",
+          "bytes": 130056,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/liblzma.so"
+        },
+        {
+          "path": "root/system/lib/libm.so",
+          "sha256": "acd05f63b3c8767f08050cb1885a51c7b320161ceaefc3df82e25900d174e776",
+          "bytes": 136920,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libm.so"
+        },
+        {
+          "path": "root/system/lib/libmedia.so",
+          "sha256": "edce747049d671c0e1410f61d7ea1bcc243c2d7de7b0558afcb9b85fe99b7414",
+          "bytes": 372076,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmedia.so"
+        },
+        {
+          "path": "root/system/lib/libmedia2_jni_core.so",
+          "sha256": "62bd2b1c90e539e7d573ac0a8f8d0d63273b1064d36bc0cd9f7f80491dd4ed5a",
+          "bytes": 41644,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmedia2_jni_core.so"
+        },
+        {
+          "path": "root/system/lib/libmedia_helper.so",
+          "sha256": "90574f6ab3fc05ec39de0e5d07a745b5829e471f90f8a16ad7d5c98c4ca90832",
+          "bytes": 77348,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmedia_helper.so"
+        },
+        {
+          "path": "root/system/lib/libmedia_jni_utils.so",
+          "sha256": "bce15940168661437596c22359aeb974b689ddbdb8df4c706a8f0b914330bad7",
+          "bytes": 15084,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmedia_jni_utils.so"
+        },
+        {
+          "path": "root/system/lib/libmedia_omx.so",
+          "sha256": "9c773be3db6ab3941a0f7a21be07c1047b5bbf4d2c8afa146275c8788f3aab10",
+          "bytes": 167604,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmedia_omx.so"
+        },
+        {
+          "path": "root/system/lib/libmedia_omx_client.so",
+          "sha256": "2707934a113b3b2d32194e6f722ebc16418dba6e5275b40b27e6ad9b25c44668",
+          "bytes": 20652,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmedia_omx_client.so"
+        },
+        {
+          "path": "root/system/lib/libmediadrm.so",
+          "sha256": "bd46cb90a66820136b7acbfcf5f0385deedc602cf98d7b07533ee50cd1b4c5dd",
+          "bytes": 169064,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmediadrm.so"
+        },
+        {
+          "path": "root/system/lib/libmediadrmmetrics_lite.so",
+          "sha256": "8400e73c076edc33d4b51256fbb447a4925c2ff10ab761048ee0fef3120a2fd2",
+          "bytes": 120804,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmediadrmmetrics_lite.so"
+        },
+        {
+          "path": "root/system/lib/libmediametrics.so",
+          "sha256": "df8f0f78f9225a52b1b9af5087ef78f822fe707d223964e1a066f64a214df1f2",
+          "bytes": 47976,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmediametrics.so"
+        },
+        {
+          "path": "root/system/lib/libmediandk.so",
+          "sha256": "b8566f80ce7f8d6af6d3a93ff3abe6ffb203bfffd2c69c0069f6ac9a7e539bc1",
+          "bytes": 118852,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmediandk.so"
+        },
+        {
+          "path": "root/system/lib/libmediandk_utils.so",
+          "sha256": "3d12d7147ee94828e6a4cd79b579270161e0031aada6f7eeb27b5320b5772b10",
+          "bytes": 14888,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmediandk_utils.so"
+        },
+        {
+          "path": "root/system/lib/libmediautils.so",
+          "sha256": "3c9af33861cdedc746645bf3a8c595df9cc00f199d992e8cd9df9d638f9038cc",
+          "bytes": 65388,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmediautils.so"
+        },
+        {
+          "path": "root/system/lib/libmeminfo.so",
+          "sha256": "38216c83cb8215436cd5d374c9b9462c959c86db40ef4160c08299c11bc6a06c",
+          "bytes": 50020,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmeminfo.so"
+        },
+        {
+          "path": "root/system/lib/libmemtrack.so",
+          "sha256": "8a6bb2d63cb011c37cafb9b3f8ec6f5844e7aa8e21b9189b72ac2b8dc9a94fa0",
+          "bytes": 15776,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmemtrack.so"
+        },
+        {
+          "path": "root/system/lib/libmemunreachable.so",
+          "sha256": "bd43ea8086c3b7bc4e0d031f509f145f62f9d4b3e9ac3a1c98fefd83a9e3ecdc",
+          "bytes": 133996,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libmemunreachable.so"
+        },
+        {
+          "path": "root/system/lib/libminikin.so",
+          "sha256": "2782502235cdbec10e519ae2e1c1670fcd104c76c73df088a6dfd09873b0101d",
+          "bytes": 139996,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libminikin.so"
+        },
+        {
+          "path": "root/system/lib/libnativebridge_lazy.so",
+          "sha256": "30ea457822ca442f4ee7ade70bb5f6bb1830c1b8d947efc619f7118cefda4d88",
+          "bytes": 15140,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnativebridge_lazy.so"
+        },
+        {
+          "path": "root/system/lib/libnativehelper.so",
+          "sha256": "9f0c6d010e7660eb33075fa289c4cbaa98f077d5d5318958286df661de427d76",
+          "bytes": 24208,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnativehelper.so"
+        },
+        {
+          "path": "root/system/lib/libnativeloader_lazy.so",
+          "sha256": "664e4bcc4a7d120a606cc50943a017acaf57b833f64e7d19f93f47ae5482e2fa",
+          "bytes": 15072,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnativeloader_lazy.so"
+        },
+        {
+          "path": "root/system/lib/libnativewindow.so",
+          "sha256": "469716bc1d6117b0385f6de4243fabc0cc73b9788a1f3ecda0c55f737e9ebb1c",
+          "bytes": 28160,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnativewindow.so"
+        },
+        {
+          "path": "root/system/lib/libnblog.so",
+          "sha256": "df75abf8a3137ac626002c3020955dae8036d54ca24d0937a1c1b6f01eb72753",
+          "bytes": 152872,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnblog.so"
+        },
+        {
+          "path": "root/system/lib/libnetd_client.so",
+          "sha256": "c9deecde2ac4049befdd8d17981726dae0eef845cafd3414eaf5cfc377143029",
+          "bytes": 24060,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnetd_client.so"
+        },
+        {
+          "path": "root/system/lib/libnetdbpf.so",
+          "sha256": "5ccfe4d335585b02b3758395a7fc7ae3300da1a550da7cc265a8bc08deb36bfa",
+          "bytes": 33428,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnetdbpf.so"
+        },
+        {
+          "path": "root/system/lib/libnetdutils.so",
+          "sha256": "5df38fc104b249c11b5a78fd5118f2e7f58ac09606c0cffb80f41276ae8fb5b9",
+          "bytes": 67764,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libnetdutils.so"
+        },
+        {
+          "path": "root/system/lib/libpackagelistparser.so",
+          "sha256": "88092f2ed9a8d3e153455d40fac288896cfd43cac4fb9b1f8ad7391566789d78",
+          "bytes": 15180,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libpackagelistparser.so"
+        },
+        {
+          "path": "root/system/lib/libpcre2.so",
+          "sha256": "6e8462e6ccb4b2202c0db50b96e72d4959d6576771c1eecbdb785e01d39f5f84",
+          "bytes": 270984,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libpcre2.so"
+        },
+        {
+          "path": "root/system/lib/libpdfium.so",
+          "sha256": "242f6034bf6295bf9a61970f9c8d4d5bbf3f8c5535738f6177947dbd055f78b6",
+          "bytes": 4952780,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libpdfium.so"
+        },
+        {
+          "path": "root/system/lib/libpdx_default_transport.so",
+          "sha256": "5d8b96edfd2119cccf0346fcd9419c6b71ff9721b7057ddcfc61875dd711f4d6",
+          "bytes": 123360,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libpdx_default_transport.so"
+        },
+        {
+          "path": "root/system/lib/libpiex.so",
+          "sha256": "737e03324edb885f7ac50393b7901523b7908834569290d0e295bb691c2dcf02",
+          "bytes": 76204,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libpiex.so"
+        },
+        {
+          "path": "root/system/lib/libpng.so",
+          "sha256": "3d9d774826cd56000e6d01405135c7b9cd205d8a80a5a0e12509d7e2271b5120",
+          "bytes": 175740,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libpng.so"
+        },
+        {
+          "path": "root/system/lib/libprocessgroup.so",
+          "sha256": "ce86ed52b5d60904fa7c7ebc2853a558c96769efa277acde4af73a5b729d2be9",
+          "bytes": 198776,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libprocessgroup.so"
+        },
+        {
+          "path": "root/system/lib/libprocinfo.so",
+          "sha256": "19d5c1ae290b33bb64fb7952935fc07c7cb2f98762be97f8a69fc5c75af29813",
+          "bytes": 15456,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libprocinfo.so"
+        },
+        {
+          "path": "root/system/lib/libprotobuf-cpp-lite.so",
+          "sha256": "190bb8b64e0ec5fd1eca662344033ad83787eef10e83fa9569ba90f78fb7de16",
+          "bytes": 216264,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libprotobuf-cpp-lite.so"
+        },
+        {
+          "path": "root/system/lib/libselinux.so",
+          "sha256": "f42518cc0f939dc0136b3a5d6d7defd6466804a55003b0b1573bceaed4e426a9",
+          "bytes": 77168,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libselinux.so"
+        },
+        {
+          "path": "root/system/lib/libsensor.so",
+          "sha256": "6417959c1564db2e567c21498ef8bb34ca7b497e28e8acabf11ebd2427856546",
+          "bytes": 71304,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsensor.so"
+        },
+        {
+          "path": "root/system/lib/libsonivox.so",
+          "sha256": "9af7fb35d528d6f16b827eb1d4b81909488fc2a74bc37f2ca84d1e066bfe4e16",
+          "bytes": 568248,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsonivox.so"
+        },
+        {
+          "path": "root/system/lib/libsoundtrigger.so",
+          "sha256": "59e3c1d543c5ebd7b0dc5040a5e79b892f17d77cce92f07582e171a1c278fc8d",
+          "bytes": 52432,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsoundtrigger.so"
+        },
+        {
+          "path": "root/system/lib/libspeexresampler.so",
+          "sha256": "1e2035b1c789db49b6ae785454c4a0b4dce2c6f1a5c1a8234864d9debc0e604e",
+          "bytes": 28220,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libspeexresampler.so"
+        },
+        {
+          "path": "root/system/lib/libsqlite.so",
+          "sha256": "7881fd84ee526dbd05c29e0e450951e0b1281e228042ec4a468a735ff838dd53",
+          "bytes": 874724,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsqlite.so"
+        },
+        {
+          "path": "root/system/lib/libstagefright.so",
+          "sha256": "3f0531530a28586951129ba994ec5f0733ea6425b07ec448ff5279b00c17c26b",
+          "bytes": 1013996,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libstagefright.so"
+        },
+        {
+          "path": "root/system/lib/libstagefright_codecbase.so",
+          "sha256": "a90e24bd5193e9f58d582fe1665a59bb0870fb6302843ec27119ddaf85f8cf44",
+          "bytes": 23972,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libstagefright_codecbase.so"
+        },
+        {
+          "path": "root/system/lib/libstagefright_foundation.so",
+          "sha256": "39d27a3b9ebdd0986dc28b6bf843191816b5e32763e6515bbba2cf4e7ec30fa5",
+          "bytes": 136056,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libstagefright_foundation.so"
+        },
+        {
+          "path": "root/system/lib/libstagefright_omx_utils.so",
+          "sha256": "4e4f0c800453a4c69b00f0ede8565a77af87a5d7584fdbb00a782835b075bdee",
+          "bytes": 19584,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libstagefright_omx_utils.so"
+        },
+        {
+          "path": "root/system/lib/libstatslog.so",
+          "sha256": "52bc353796d55d33b4549e9303bf5f1dfd123cc7b4e5f140516b03baf575c6b0",
+          "bytes": 148936,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libstatslog.so"
+        },
+        {
+          "path": "root/system/lib/libstdc++.so",
+          "sha256": "42e3e77e7682dc7b61389f3367c3153ffb1a4e726d6e708ce7ce519b656b44e9",
+          "bytes": 24200,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libstdc++.so"
+        },
+        {
+          "path": "root/system/lib/libsync.so",
+          "sha256": "d8e46c5426f077418e246ce464daa369d21f52752e760f62a081ef4d52ede4a0",
+          "bytes": 15124,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsync.so"
+        },
+        {
+          "path": "root/system/lib/libtinyxml2.so",
+          "sha256": "78795c53cbd2268291babfda7e7ddcec690ec2645c49ddb77c55f234425c09e4",
+          "bytes": 55316,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libtinyxml2.so"
+        },
+        {
+          "path": "root/system/lib/libui.so",
+          "sha256": "e23b8053fbfb7140f0cafea30749a15c6407f8c75e8fa102e2e17e518cf440ba",
+          "bytes": 147384,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libui.so"
+        },
+        {
+          "path": "root/system/lib/libunwindstack.so",
+          "sha256": "8bfb79d6672da5cb0a9544fbb732081c43375273bbdcd0020dfb230aff4dc6ff",
+          "bytes": 299696,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libunwindstack.so"
+        },
+        {
+          "path": "root/system/lib/libusbhost.so",
+          "sha256": "f7a0f1446536d8f2bcef210aea9f141a9430e4b8b6dec7aa5562af55753a0fc0",
+          "bytes": 23696,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libusbhost.so"
+        },
+        {
+          "path": "root/system/lib/libutils.so",
+          "sha256": "18494b3aa3e68ac084386871aadb0ac30b1279831e2f1e1c3c48bdfc07753b72",
+          "bytes": 89356,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libutils.so"
+        },
+        {
+          "path": "root/system/lib/libvibrator.so",
+          "sha256": "ebc087a459c246aae2b741a55300945bb943e6e1c758be0b08cc040883b0db3f",
+          "bytes": 41088,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libvibrator.so"
+        },
+        {
+          "path": "root/system/lib/libvintf.so",
+          "sha256": "1ee54a3899c1b4f1a1ebafa2cbc56372cc386a4fb2adea3a089abc2d0d925dea",
+          "bytes": 398664,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libvintf.so"
+        },
+        {
+          "path": "root/system/lib/libvndksupport.so",
+          "sha256": "9e13b7c544fb97f0676c36001b9689e535f038ec5617757be6e9d8aa4c8ab597",
+          "bytes": 15164,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libvndksupport.so"
+        },
+        {
+          "path": "root/system/lib/libvulkan.so",
+          "sha256": "8f0f1da789f47089da1ae13d904ba8accd35efdf2172074402e53b544d0f533f",
+          "bytes": 138540,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libvulkan.so"
+        },
+        {
+          "path": "root/system/lib/libxml2.so",
+          "sha256": "2ff6a6c7f4ca0daeb7b24a4cf2fc0e5fb16a6e6be3d528a8aea868d261e02a7d",
+          "bytes": 958800,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libxml2.so"
+        },
+        {
+          "path": "root/system/lib/libz.so",
+          "sha256": "f074a9f203a692c01677ceaa7e9ad79cdcabf2c0f0e157e7f564f5eb0cacc159",
+          "bytes": 115432,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libz.so"
+        },
+        {
+          "path": "root/system/lib/libziparchive.so",
+          "sha256": "7678d19f34e012ce670dd5fdecb700c13f1f473699397529efb91774b89a89cd",
+          "bytes": 49836,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libziparchive.so"
+        },
+        {
+          "path": "root/system/lib/server_configurable_flags.so",
+          "sha256": "d6d015bb1cb75b86eaed70d3c098c3dae0260a5a9f7df06af8ff41c4c1cf7865",
+          "bytes": 67716,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/server_configurable_flags.so"
+        },
+        {
+          "path": "root/system/bin/linker",
+          "sha256": "1f2c959bc933bc1e22d0487f9687b85ec7cde0b5eb4f6cc365eb5fdc1d16e9aa",
+          "bytes": 1183780,
+          "mode": 493,
+          "install_path": "opt/a081-controller-bionic/system/bin/linker"
+        },
+        {
+          "path": "root/apex/com.android.runtime/etc/icu/icudt63l.dat",
+          "sha256": "a81a05ae8a429b00b70154f718b9f73fc15a9bdb17fb2a89668888e85298dce2",
+          "bytes": 24314784,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/apex/com.android.runtime/etc/icu/icudt63l.dat"
+        },
+        {
+          "path": "root/system/etc/controller/data/blob_detection_params_default.yaml",
+          "sha256": "c3fb9b8606f8eea29c838028422293cd975534bac1f42557c0aec968867ae71b",
+          "bytes": 494,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/blob_detection_params_default.yaml"
+        },
+        {
+          "path": "root/system/etc/controller/data/camera_parameters_multi-cam-XR2-4Cam.xml",
+          "sha256": "5838dfba43665247e478e121c8d825f3fb3f53c8a56cd96fbe9cd0a49dbb75c2",
+          "bytes": 6025,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/camera_parameters_multi-cam-XR2-4Cam.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/camera_parameters_multi-cam.xml",
+          "sha256": "1fc151e8224cb89504a081b54759ffcb30398a4ca7234f4a1c466bb64e90f860",
+          "bytes": 6135,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/camera_parameters_multi-cam.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/fusion_parameters.xml",
+          "sha256": "2fb2db4fcecd0b8045ffc0887329434404e5d1c9b7b5d18224acc6f5ff290b54",
+          "bytes": 401,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/fusion_parameters.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/fusion_parameters_left.xml",
+          "sha256": "2fb2db4fcecd0b8045ffc0887329434404e5d1c9b7b5d18224acc6f5ff290b54",
+          "bytes": 401,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/fusion_parameters_left.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/fusion_parameters_right.xml",
+          "sha256": "2fb2db4fcecd0b8045ffc0887329434404e5d1c9b7b5d18224acc6f5ff290b54",
+          "bytes": 401,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/fusion_parameters_right.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/imu_parameters_2P_left.xml",
+          "sha256": "b127d7c7b07e85c5307f5bdb3b75538237a9401e6c2cd1d771627be293cdc0d8",
+          "bytes": 503,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/imu_parameters_2P_left.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/imu_parameters_2P_right.xml",
+          "sha256": "f7f618e65cae9e2a82f7e59803eacac8af744384562e975b69d6f34b455df15c",
+          "bytes": 500,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/imu_parameters_2P_right.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/visinit/knn.txt",
+          "sha256": "c4f2c45555d27c9772fb76fc0d967d317b29c9948d84928047baad7fe6448725",
+          "bytes": 3904,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/visinit/knn.txt"
+        },
+        {
+          "path": "root/system/etc/controller/data/visinit/poseCreator_parameters.xml",
+          "sha256": "a316f963a53ed67de1e73e4b5fdf285ff5c4f02ece5d4318ac0f4717d6b43bd0",
+          "bytes": 212,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/visinit/poseCreator_parameters.xml"
+        },
+        {
+          "path": "root/system/etc/controller/data/visinit/visinit_config.xml",
+          "sha256": "2fc977df9ace6334798e69f6ba2390a35ee6c6c009866107e11e5c8d3d508e9a",
+          "bytes": 200,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/etc/controller/data/visinit/visinit_config.xml"
+        }
+      ],
+      "asset_id": 701295627
+    },
+    "controller-dsp": {
+      "asset": "a081-controller-dsp-a081-vendor-r1.tar.gz",
+      "sha256": "ec909786f390f07e7d5974b1ca6507cfa36a8314b968e09a4eb1dce6588a409e",
+      "bytes": 14506,
+      "files": [
+        {
+          "path": "root/system/lib/libsnpe_dsp_domains_v2.so",
+          "sha256": "11bb36da436ffeb661c78e9391625c4d6464e74177e961adfc7a44f93a1b29de",
+          "bytes": 17984,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsnpe_dsp_domains_v2.so"
+        },
+        {
+          "path": "root/system/lib/libsnpe_dsp_domains_v2_system.so",
+          "sha256": "b709d251f4ad08761b8744e51d3a852d8fa725e266a59856beb9a5ed4a33137e",
+          "bytes": 17980,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsnpe_dsp_domains_v2_system.so"
+        },
+        {
+          "path": "root/system/lib/libsnpe_dsp_domains_v3.so",
+          "sha256": "90c2f9b41ab5265cfad8ea8b86591b625bafa180254f1bf31b0dda8fc9db92bb",
+          "bytes": 13760,
+          "mode": 420,
+          "install_path": "opt/a081-controller-bionic/system/lib/libsnpe_dsp_domains_v3.so"
+        }
+      ],
+      "asset_id": 701309248
+    }
+  },
+  "release_id": 431302758
+}

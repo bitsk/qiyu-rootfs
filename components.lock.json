@@ -27,7 +27,7 @@
     },
     "qiyu-head-tracking": {
       "repository": "https://github.com/bitsk/qiyu-head-tracking",
-      "commit": "3ba08d9d24a2cc1d265624003923d8565c977fcf",
+      "commit": "01d3daf2c66a64e02d32a890c232944792a385c3",
       "public_headers_sha256": {
         "include/qiyu/head/a081_qvr_pose.h": "e548b8b3027de011ad2c868a812017b1ea55d5e1f0f424abfa0d205cd2b0455e",
         "include/qiyu/head/a081_tracking_client.h": "553fbc3bad33d4c6389b24c6305c640ad7f4b5b8b5a42cc0f694b6ba5bb2d06c",
@@ -36,7 +36,7 @@
     },
     "qiyu-controller-tracking": {
       "repository": "https://github.com/bitsk/qiyu-controller-tracking",
-      "commit": "f92ee08d919fca3c191da84b022456145e3a254e",
+      "commit": "f46dcaf3b4e7563bdf162ff97905ad4fc6e61967",
       "public_headers_sha256": {
         "include/qiyu/controller/a081_controller_controls.h": "d79c96213f8f59e2bf242025e1729bf0d196c76ed859c0b14bdeb1e4f54cc1e1",
         "include/qiyu/controller/a081_controller_image_abi.hpp": "0d6d75883df02e60bfce071629f5721d7770df5eb1150c579598b974c9ab71a0",
