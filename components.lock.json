@@ -3,11 +3,11 @@
   "components": {
     "qiyu-kernel": {
       "repository": "https://github.com/bitsk/qiyu-kernel",
-      "commit": "d590c72abf42c88e868eb15844fa56931e7e47bc"
+      "commit": "834403d2b2d3dc0879fe7a146b0887e22afc040e"
     },
     "qiyu-device-service": {
       "repository": "https://github.com/bitsk/qiyu-device-service",
-      "commit": "fa2fc4267d82acfd13a26efece6296c791434529",
+      "commit": "01037e71a6de61a6ad4539ce7097c95ae822143a",
       "public_headers_sha256": {
         "include/qiyu/device/a081_camera_capture.hpp": "e287db7d4cfd033bc28e345f08d5ce888a8f56b4b8ab39f7ff430ab6482c8384",
         "include/qiyu/device/a081_camera_groups.hpp": "34391b8a470237b87e1bee11c25c9f265262cd10c1a61e960d327fdca6867c63",
@@ -27,7 +27,7 @@
     },
     "qiyu-head-tracking": {
       "repository": "https://github.com/bitsk/qiyu-head-tracking",
-      "commit": "01d3daf2c66a64e02d32a890c232944792a385c3",
+      "commit": "791e8d889f9404936127a8be9716831d6d9cdd82",
       "public_headers_sha256": {
         "include/qiyu/head/a081_qvr_pose.h": "e548b8b3027de011ad2c868a812017b1ea55d5e1f0f424abfa0d205cd2b0455e",
         "include/qiyu/head/a081_tracking_client.h": "553fbc3bad33d4c6389b24c6305c640ad7f4b5b8b5a42cc0f694b6ba5bb2d06c",
@@ -36,7 +36,7 @@
     },
     "qiyu-controller-tracking": {
       "repository": "https://github.com/bitsk/qiyu-controller-tracking",
-      "commit": "f46dcaf3b4e7563bdf162ff97905ad4fc6e61967",
+      "commit": "c40bf81281dac0eb8efcdc9fe5f7917ad7d3814f",
       "public_headers_sha256": {
         "include/qiyu/controller/a081_controller_controls.h": "d79c96213f8f59e2bf242025e1729bf0d196c76ed859c0b14bdeb1e4f54cc1e1",
         "include/qiyu/controller/a081_controller_image_abi.hpp": "0d6d75883df02e60bfce071629f5721d7770df5eb1150c579598b974c9ab71a0",
@@ -46,15 +46,15 @@
     },
     "qiyu-vr-runtime": {
       "repository": "https://github.com/bitsk/qiyu-vr-runtime",
-      "commit": "c0414dde83da89cbc3a2e0ba8d589bd40bf3d50b"
+      "commit": "043be47092d132ae13f0a4d3d6d043f3aa7ba908"
     },
     "qiyu-vr-session": {
       "repository": "https://github.com/bitsk/qiyu-vr-session",
-      "commit": "0ba812ff2b5a68851999e3e604d5ea4c463da38c"
+      "commit": "edce14196a86e70fd5b462b76ce401f9811e523c"
     },
     "qiyu-debug": {
       "repository": "https://github.com/bitsk/qiyu-debug",
-      "commit": "48c7debf32affbe53c7bfafb954a8acbd49cbf54"
+      "commit": "5a64a3ea92e3d0af6fb6c5d0a34345cf596b18b5"
     }
   }
 }
