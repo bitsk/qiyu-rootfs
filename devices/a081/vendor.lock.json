@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "bitsk/qiyu-vendor",
-  "visibility": "private",
+  "visibility": "public",
   "tag": "a081-vendor-r1",
   "model": "a081",
   "catalog_sha256": "4497dd82ff962aa6c2124324fa17ca4cba37514ddc0d04aa524dad88df6a1566",

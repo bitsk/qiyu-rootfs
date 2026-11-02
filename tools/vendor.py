@@ -39,8 +39,9 @@ def verify_cache(cache, lock_path=DEFAULT_LOCK, required_bundles=None):
     lock_path = Path(lock_path)
     lock = load_lock(lock_path)
     receipt = json.loads((cache / 'receipt.json').read_text())
-    if receipt['lock_sha256'] != digest(lock_path):
-        raise ValueError('Cache was created with a different vendor lock')
+    # Identity and per-file hashes keep metadata-only updates cache-compatible.
+    if any(receipt.get(key) != lock.get(key) for key in ['repository', 'tag', 'model']):
+        raise ValueError('Cache was created for a different vendor release or model')
     selected = receipt['bundles']
     if len(selected) != len(set(selected)) or set(selected) - set(lock['bundles']):
         raise ValueError('Unknown or duplicate cached bundle')

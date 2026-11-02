@@ -22,7 +22,7 @@ systems/*/legacy/ 保留原有设备侧初始化/配置和镜像配方；其中 
 
 ## 固定版本原厂二进制
 
-原厂依赖改由独立私有 [qiyu-vendor](https://github.com/bitsk/qiyu-vendor) 的 Release 提供；本仓库只保存 devices/a081/vendor.lock.json 中的资产 ID、归档与逐文件 SHA-256。无需反复提取原厂镜像：
+原厂依赖改由独立公开 [qiyu-vendor](https://github.com/bitsk/qiyu-vendor) 的 Release 提供；本仓库只保存 devices/a081/vendor.lock.json 中的资产 ID、归档与逐文件 SHA-256。无需反复提取原厂镜像：
 
 ```sh
 python3 tools/vendor.py fetch --output /new/vendor-cache
