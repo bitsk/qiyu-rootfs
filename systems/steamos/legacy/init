@@ -38,7 +38,14 @@ cd /
 n=0
 while [ ! -b /dev/sda16 ] && [ "$n" -lt 60 ]; do sleep 1; n=$((n+1)); done
 [ -b /dev/sda16 ] || fail 'osstore device missing'
-blkid /dev/sda16 | grep -q 'UUID="<device-identity>"' || fail 'osstore UUID mismatch'
+# Installation identity is supplied locally, never embedded in public source.
+osstore_uuid=
+[ ! -r /etc/qiyu-device.conf ] || . /etc/qiyu-device.conf
+for arg in $(cat /proc/cmdline); do
+    case "$arg" in qiyu.osstore_uuid=*) osstore_uuid=${arg#*=};; esac
+done
+[ -n "$osstore_uuid" ] || fail 'Supply qiyu.osstore_uuid or local qiyu-device.conf'
+blkid /dev/sda16 | grep -Fq "UUID=\"$osstore_uuid\"" || fail 'osstore UUID mismatch'
 mount -t ext4 -o noatime /dev/sda16 /osstore || fail 'osstore mount failed'
 
 debian_root=/osstore/systems/debian/rootfs
